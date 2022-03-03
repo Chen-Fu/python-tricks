@@ -1,0 +1,9 @@
+import sqlite3
+import pandas as pd
+# Create your connection.
+cnx = sqlite3.connect('file.db')
+
+df = pd.read_sql_query("SELECT * FROM table_name", cnx)
+
+
+https://stackoverflow.com/questions/36028759/how-to-open-and-convert-sqlite-database-to-pandas-dataframe
